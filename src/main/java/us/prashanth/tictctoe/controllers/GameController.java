@@ -12,7 +12,6 @@ public class GameController {
         game.undo();
     }
 
-
     public Game createGame(int dimension, List<Player> players) {
 
         try {
@@ -37,4 +36,10 @@ public class GameController {
     public void executeNextMove(Game game) {
         game.makeNextMove();
     }
+
+
+    public Player getWinner(Game game) {
+        return game.getWinner();
+    }
+
 }

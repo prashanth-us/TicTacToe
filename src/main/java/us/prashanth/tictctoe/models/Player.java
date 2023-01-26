@@ -1,5 +1,7 @@
 package us.prashanth.tictctoe.models;
 
+import java.util.Scanner;
+
 public class Player {
 
     private char symbol;
@@ -34,5 +36,16 @@ public class Player {
 
     public void setType(PlayerType type) {
         this.type = type;
+    }
+
+    public Move decideMove(Board board) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please tell the row starting from 0: ");
+        int row = scanner.nextInt();
+
+        System.out.println("Please tell the column starting from 0: ");
+        int column = scanner.nextInt();
+
+        return new Move(this, new Cell(row, column));
     }
 }

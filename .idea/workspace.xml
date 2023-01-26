@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f4eb0fc-d237-47f4-b230-db73f578027a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/controllers/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/exceptions/InvalidGameConstructionParameterException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/factories/BotPlayingStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/botplayingstrategy/RandomBotPlayingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/gamewinningstrategy/OrderOneGameWinningStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/TicTacToeGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/TicTacToeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/TicTacToeGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/controllers/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Cell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Move.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/botplayingstrategy/BotPlayingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/botplayingstrategy/BotPlayingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/gamewinningstrategy/GameWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/gamewinningstrategy/GameWinningStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +69,26 @@
       <recent name="P:\Scaler\TicTacToe\src\main\java\us\prashanth\tictctoe" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="TicTacToeGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="us.prashanth.tictctoe.TicTacToeGame" />
+      <module name="TicTacToe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="us.prashanth.tictctoe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TicTacToeGame" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674435719433</updated>
-      <workItem from="1674435721027" duration="10467000" />
+      <workItem from="1674435721027" duration="21864000" />
     </task>
     <servers />
   </component>
@@ -98,9 +120,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Game.java</url>
-          <line>53</line>
+          <line>88</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

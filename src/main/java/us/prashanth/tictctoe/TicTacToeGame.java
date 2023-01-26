@@ -18,10 +18,10 @@ public class TicTacToeGame {
 
         Scanner scanner = new Scanner(System.in);
         GameController gameController = new GameController();
-        System.out.println("What should be the dimension of the game");
+        System.out.println("What should be the dimension of the game?...");
         int dimension = scanner.nextInt();
-        System.out.println("Will there be any bot? ");
-        String isBotSTring = scanner.nextLine();
+        System.out.println("Will there be any bot? y/n ");
+        String isBotSTring = scanner.next();
         List<Player> players = new ArrayList<>();
 
 
@@ -31,20 +31,20 @@ public class TicTacToeGame {
             toIterate = dimension - 2;
         }
         for (int i = 0; i < toIterate; i++) {
-            System.out.println("What is the name of the player? ");
-            String playerName = scanner.nextLine();
+            System.out.println("What is the name of the player " + (i + 1) + "? ");
+            String playerName = scanner.next();
 
-            System.out.println("What is the symbol of the player? ");
-            String playerSymbol = scanner.nextLine();
+            System.out.println("What is the Symbol of the player " + (i + 1) + "? ");
+            String playerSymbol = scanner.next();
 
             players.add(new Player(playerName, playerSymbol.charAt(0), PlayerType.HUMAN));
         }
         if (isBotSTring.equals("y")) {
             System.out.println("What is the name of the Bot? ");
-            String playerName = scanner.nextLine();
+            String playerName = scanner.next();
 
             System.out.println("What is the symbol of the Bot? ");
-            String playerSymbol = scanner.nextLine();
+            String playerSymbol = scanner.next();
 
             players.add(new Bot(playerName, playerSymbol.charAt(0), BotDifficultyLevel.EASY));
         }
@@ -57,7 +57,7 @@ public class TicTacToeGame {
             gameController.displayBoard(game);
 
             System.out.println("Does anyone want to undo? y/n");
-            String input = scanner.nextLine();
+            String input = scanner.next();
 
             if (input.equals("y")) {
                 gameController.undo(game);
@@ -69,7 +69,7 @@ public class TicTacToeGame {
         }
         System.out.println("Game has Ended. Result was: ");
         if (!game.getGameStatus().equals(GameStatus.DRAW)) {
-            System.out.println("Winner is: ");
+            System.out.println("Winner is: " + gameController.getWinner(game).getName());
         }
     }
 }

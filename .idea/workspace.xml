@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f4eb0fc-d237-47f4-b230-db73f578027a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/factories/BotPlayingStrategyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/botplayingstrategy/RandomBotPlayingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/gamewinningstrategy/OrderOneGameWinningStrategy.java" afterDir="false" />
+    <list default="true" id="7f4eb0fc-d237-47f4-b230-db73f578027a" name="Changes" comment="Added UML Diagram">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/TicTacToeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/TicTacToeGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/models/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/botplayingstrategy/BotPlayingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/botplayingstrategy/BotPlayingStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/gamewinningstrategy/GameWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/us/prashanth/tictctoe/strategies/gamewinningstrategy/GameWinningStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +50,11 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "actions.on.save"
+    "settings.editor.selected.configurable": "configurable.group.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -97,7 +90,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674435719433</updated>
-      <workItem from="1674435721027" duration="21864000" />
+      <workItem from="1674435721027" duration="28937000" />
+      <workItem from="1674779486502" duration="2559000" />
     </task>
     <servers />
   </component>
@@ -114,6 +108,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added UML Diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added UML Diagram" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
